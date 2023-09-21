@@ -129,7 +129,7 @@
 
 ------
 
-1. Создал отдельный Service с возможностью доступа снаружи кластера через NodePort:
+1. Создал отдельный Service с манифестом [nginx-service2.yaml](nginx-service2.yaml) с возможностью доступа снаружи кластера через NodePort:
     ```
     kubectl apply -f nginx-service2.yaml
     ``` 
