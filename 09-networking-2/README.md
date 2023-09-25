@@ -116,10 +116,10 @@
     <html>
     <head>
     <title>Welcome to nginx!</title>
+    ...
     ```
     ```
     curl -k https://my-cluster.com/api
-    ...
     ```
     ```
     WBITT Network MultiTool (with NGINX) - backend-59556dfbcb-895k8 - 10.1.43.208 - HTTP: 80 , HTTPS: 443 . (Formerly praqma/network-multitool)
