@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: volume-pod
+  labels:
+    app: vol1
+spec:
+      selector:
+        matchLabels:
+          app: vol1
+      template:
+        metadata:
+          labels:
+            app: vol1
+        spec:
+          containers:
+          - name: multitool
+            image: wbitt/network-multitool
+            volumeMounts:
+            - name: nfs-volume
+              mountPath: /input
+          volumes:
+          - name: nfs-volume
+            persistentVolumeClaim:
+              claimName: my-pvc
