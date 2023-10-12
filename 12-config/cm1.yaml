@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: deploy-data
+data:
+  multitool_port: "8081"
+  hello.html: |
+    <html>
+      Hello World!
+    </html>
